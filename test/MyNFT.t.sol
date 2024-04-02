@@ -15,6 +15,7 @@ contract MyNFTTest is Test {
     function testCreateNFT() public {
         uint256 tokenId = myNft.createNFT(recipient, "tokenURI");
         assertEq(myNft.ownerOf(tokenId), recipient);
+
     }
 }
 
